@@ -4,6 +4,7 @@
     <div class="prices-content">پسوندهای دامنه</div>
     <v-tabs
       v-model="tab"
+      show-arrows
       color="#4f80ff"
       align-tabs="center"
       style="border-bottom: 1px solid rgb(215, 215, 215)"
@@ -153,7 +154,7 @@ export default {
   .tab-style {
     font-family: IRANSans;
     letter-spacing: 0;
-    margin-left: 35px;
+    margin-left: 10px;
     font-weight: 900;
   }
   @media (max-width: 600px) {
@@ -168,6 +169,11 @@ export default {
       width: 80px;
       height: 30px;
     }
+    .tab-style {
+      font-size: 12px;
+    margin-left: -13px;
+    font-weight: 600;
+  }
   }
   @media (max-width: 500px) {
     max-width: 100%;
