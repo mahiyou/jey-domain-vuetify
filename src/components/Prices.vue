@@ -156,21 +156,22 @@ export default {
     margin-left: 35px;
     font-weight: 900;
   }
-  @media(max-width: 600px) {
-
-      #theadborder th {
-
-    font-size: 12px;
+  @media (max-width: 600px) {
+    #theadborder th {
+      font-size: 12px;
+    }
+    #tbodyborder td {
+      font-size: 14px;
+    }
+    .order-btn {
+      font-size: 11px;
+      width: 80px;
+      height: 30px;
+    }
   }
-  #tbodyborder td {
-
-    font-size: 14px;
-  }
-  .order-btn {
-    font-size: 11px;
-    width: 80px;
-    height: 30px;
-  }
+  @media (max-width: 500px) {
+    max-width: 100%;
+    padding: 20px;
   }
 }
 </style>

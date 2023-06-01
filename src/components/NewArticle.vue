@@ -177,10 +177,9 @@
   .card {
     box-shadow: none;
     margin: auto;
-    
   }
   .side-card {
-    margin:16px;
+    margin: 16px;
     max-width: 700px;
     padding: 14px;
     box-shadow: none;
@@ -196,29 +195,32 @@
     padding: 20px;
     border-radius: 0px;
   }
-  .link-class{
+  .link-class {
     text-decoration: none;
   }
-  .card-responsive-mood{
+  .card-responsive-mood {
+    display: none;
+  }
+  @media (max-width: 960px) {
+    .side-card {
+      margin: auto;
+      margin-bottom: 10px;
+    }
+    .card {
       display: none;
     }
-  @media(max-width: 960px) {
-    .side-card { margin: auto; margin-bottom: 10px;}
-    .card{
-      display: none;
-    }
-    .card-responsive-mood{
+    .card-responsive-mood {
       display: block;
     }
-   
-    
   }
-  @media(max-width: 600px) {
-            .title{
-                text-align: center;
-                
-            }
-            
-        }
+  @media (max-width: 600px) {
+    .title {
+      text-align: center;
+    }
+  }
+  @media (max-width: 500px) {
+    max-width: 100%;
+    padding: 20px;
+  }
 }
 </style>

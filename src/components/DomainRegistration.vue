@@ -142,5 +142,11 @@
       padding-right: 8px;
     }
   }
+  @media (max-width: 500px) {
+    max-width: 100%;
+    border-radius: 0px;
+    padding: 30px 20px;
+    
+  }
 }
 </style>

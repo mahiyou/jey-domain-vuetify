@@ -96,5 +96,9 @@
       max-width: 350px;
     }
   }
+  @media (max-width:500px) {
+    max-width: 100%;
+    
+  }
 }
 </style>

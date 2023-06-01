@@ -37,5 +37,9 @@
     font-size: 12px;
     font-weight: 700;
   }
+  @media (max-width: 500px) {
+    max-width: 100%;
+    padding: 30px 20px;
+  }
 }
 </style>
