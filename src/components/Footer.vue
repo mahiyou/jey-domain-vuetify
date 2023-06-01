@@ -76,6 +76,7 @@
     }
   }
   @media (max-width: 600px) {
+    padding: 45px 30px 80px 30px;
     .footer-sen {
       margin: 30px 0;
       text-align: center;
@@ -83,6 +84,8 @@
     .f-img1 {
       margin: auto;
     }
+    .f-img2 {
+    margin-top: 25%;}
   }
 }
 </style>
