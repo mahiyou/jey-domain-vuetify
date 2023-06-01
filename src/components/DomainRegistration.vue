@@ -13,7 +13,11 @@
         <div class="input-group">
           <v-row>
             <v-col cols="2">
-              <span class="com-style" dir="ltr">.com</span>
+              <select v-model="selected" class="form-control select-domain" dir="ltr">
+                <option :value="domains[index - 1].value" v-for="index in 4" :key="index">
+                  <v-btn>{{ domains[index - 1].tilte}}</v-btn>
+                </option>
+              </select>
             </v-col>
             <v-col cols="8">
               <input
@@ -32,23 +36,33 @@
       </form>
     </div>
     <div class="featured-tlds">
-      <div dir="ltr" class="align">
-        <div>
-          .com <span>۶۰۳,۰۰۰</span>
-        </div>
-        <div>
-          .org <span>۶۰۳,۰۰۰</span>
-        </div>
-        <div>
-          .net <span>۶۰۳,۰۰۰</span>
-        </div>
-        <div>
-          .ir <span>۶۰۳,۰۰۰</span>
-        </div>
+      <div dir="ltr" class="prices">
+        <div class="price">.com <span>۶۰۳,۰۰۰</span></div>
+        <div class="price">.org <span>۵۰۳,۰۰۰</span></div>
+        <div class="price">.net <span>۷۰۳,۰۰۰</span></div>
+        <div class="price">.ir <span>۴۸,۰۰۰</span></div>
       </div>
     </div>
   </v-container>
 </template>
+<script>
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  data() {
+    return {
+      domains: [
+        { tilte: ".com", value: "com" },
+        { tilte: ".org", value: "org" },
+        { tilte: ".net", value: "net" },
+        { tilte: ".ir", value: "ir" },
+      ],
+      selected: "com",
+    };
+  },
+});
+</script>
+
 <style lang="scss">
 .domain-container {
   max-width: 90%;
@@ -84,13 +98,14 @@
     color: rgb(156, 156, 156);
     text-align: left;
   }
-  .com-style {
+  .select-domain {
     background: rgb(235, 235, 235);
     padding: 14px;
     border-radius: 0px 40px 40px 0px;
     width: 110px;
     float: right;
     color: black;
+    text-align: center;
   }
   .btn-confirm {
     font-family: IRANSans;
@@ -106,21 +121,19 @@
     margin-left: 7px;
     float: left;
   }
-  .align {
-    text-align: center;
 
-    word-spacing: 12px;
-    font-size: 15px;
-  }
   .featured-tlds {
     width: 100%;
-    overflow: auto ;
+    overflow: auto;
   }
-  .align {
+  .prices {
     width: 480px;
     height: 3em;
+    word-spacing: 12px;
+    font-size: 15px;
+    margin: auto;
   }
-  .align > div {
+  .price {
     display: inline-block;
     border-right: 1px solid white;
     padding: 0 10px;
@@ -133,8 +146,8 @@
     .search-input {
       min-width: 100%;
     }
-    .com-style {
-      width: 60px;
+    .select-domain {
+      width: 70px;
     }
     .input-style {
       width: 80%;
@@ -146,7 +159,6 @@
     max-width: 100%;
     border-radius: 0px;
     padding: 30px 20px;
-    
   }
 }
 </style>
