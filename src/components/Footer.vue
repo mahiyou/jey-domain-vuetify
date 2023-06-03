@@ -27,7 +27,7 @@
           </v-col>
           <v-col sm="6" cols="12">
             <div class="mb-7">
-              <a href="#" class="link-style">تماس با ما</a>
+              <a href="/contact-us" class="link-style">تماس با ما</a>
             </div>
             <div class="mb-7">
               <a href="#" class="link-style">سوالات متداول</a>
