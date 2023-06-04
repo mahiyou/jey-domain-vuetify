@@ -36,7 +36,7 @@
               <td class="td-background td-color">۶۰۳,۰۰۰</td>
               <td class="td-background td-color">۶۰۳,۰۰۰</td>
               <td class="td-background">
-                <v-btn class="order-btn">سفارش</v-btn>
+                <v-btn class="order-btn" href="/order/domain">سفارش</v-btn>
               </td>
             </tr>
             <tr>
@@ -44,7 +44,7 @@
               <td class="td-color">۴۸,۰۰۰</td>
               <td class="td-color">۴۸,۰۰۰</td>
               <td class="td-color">۴۸,۰۰۰</td>
-              <td><v-btn class="order-btn">سفارش</v-btn></td>
+              <td><v-btn class="order-btn" href="/order/domain">سفارش</v-btn></td>
             </tr>
             <tr>
               <td dir="ltr" class="td-background">.com</td>
@@ -52,7 +52,7 @@
               <td class="td-background td-color">۶۰۳,۰۰۰</td>
               <td class="td-background td-color">۶۰۳,۰۰۰</td>
               <td class="td-background">
-                <v-btn class="order-btn">سفارش</v-btn>
+                <v-btn class="order-btn" href="/order/domain">سفارش</v-btn>
               </td>
             </tr>
             <tr>
@@ -60,7 +60,7 @@
               <td class="td-color">۴۸,۰۰۰</td>
               <td class="td-color">۴۸,۰۰۰</td>
               <td class="td-color">۴۸,۰۰۰</td>
-              <td><v-btn class="order-btn">سفارش</v-btn></td>
+              <td><v-btn class="order-btn" href="/order/domain">سفارش</v-btn></td>
             </tr>
             <tr>
               <td dir="ltr" class="td-background">.com</td>
@@ -68,7 +68,7 @@
               <td class="td-background td-color">۶۰۳,۰۰۰</td>
               <td class="td-background td-color">۶۰۳,۰۰۰</td>
               <td class="td-background">
-                <v-btn class="order-btn">سفارش</v-btn>
+                <v-btn class="order-btn" href="/order/domain">سفارش</v-btn>
               </td>
             </tr>
             <tr>
@@ -76,7 +76,7 @@
               <td class="td-color">۴۸,۰۰۰</td>
               <td class="td-color">۴۸,۰۰۰</td>
               <td class="td-color">۴۸,۰۰۰</td>
-              <td><v-btn class="order-btn">سفارش</v-btn></td>
+              <td><v-btn class="order-btn" href="/order/domain">سفارش</v-btn></td>
             </tr>
             <tr>
               <td dir="ltr" class="td-background">.com</td>
@@ -84,7 +84,7 @@
               <td class="td-background td-color">۶۰۳,۰۰۰</td>
               <td class="td-background td-color">۶۰۳,۰۰۰</td>
               <td class="td-background">
-                <v-btn class="order-btn">سفارش</v-btn>
+                <v-btn class="order-btn" href="/order/domain">سفارش</v-btn>
               </td>
             </tr>
             <tr>
@@ -92,7 +92,7 @@
               <td class="td-color">۴۸,۰۰۰</td>
               <td class="td-color">۴۸,۰۰۰</td>
               <td class="td-color">۴۸,۰۰۰</td>
-              <td><v-btn class="order-btn">سفارش</v-btn></td>
+              <td><v-btn class="order-btn" href="/order/domain">سفارش</v-btn></td>
             </tr>
           </tbody>
         </v-table>

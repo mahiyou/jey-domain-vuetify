@@ -19,6 +19,11 @@ const routes = [
         name: 'ContactUs',
         component: () => import(/* webpackChunkName: "home" */ '@/views/ContactUs.vue'),
       },
+      {
+        path: '/order/domain',
+        name: 'OrderDomain',
+        component: () => import(/* webpackChunkName: "home" */ '@/views/OrderDomain.vue'),
+      },
     ],
   },
 ]
