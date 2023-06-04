@@ -37,22 +37,8 @@
     <div class="domain-sugestion">
       <div class="ds-title">دامنه های پیشنهادی</div>
       <div>
-      <v-row class="sugestions mt-1">
-        <v-col md="8" cols="6"><span style="font-weight: 100">rion</span>.ir</v-col>
-        <v-col md="2" cpls="3">۴۸,۰۰۰</v-col>
-        <v-col md="2" cols="3"
-          ><v-btn variant="text" class="buy-btn-2">خرید دامنه</v-btn></v-col
-        >
-      </v-row>
-      <v-row class="sugestions">
-        <v-col md="8" cols="6"><span style="font-weight: 100">rion</span>.net</v-col>
-        <v-col md="2" cpls="3">۴۸,۰۰۰</v-col>
-        <v-col md="2" cols="3"
-          ><v-btn variant="text" class="buy-btn-2">خرید دامنه</v-btn></v-col
-        >
-      </v-row>
-      <v-row class="sugestions">
-        <v-col md="8" cols="6"><span style="font-weight: 100">rion</span>.org</v-col>
+      <v-row class="sugestions" v-for="index in domains.length" :key="index">
+        <v-col md="8" cols="6"><span style="font-weight: 100">rion</span>{{domains[index-1]}}</v-col>
         <v-col md="2" cpls="3">۴۸,۰۰۰</v-col>
         <v-col md="2" cols="3"
           ><v-btn variant="text" class="buy-btn-2">خرید دامنه</v-btn></v-col
@@ -70,7 +56,9 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   data() {
-    return {};
+    return {
+      domains:[".ir",".org",".net"]
+    };
   },
 });
 </script>
@@ -164,6 +152,7 @@ export default defineComponent({
       border-radius: 7px 7px 0px 0px;
       border-bottom: 1px solid #5cb85c;
       font-weight: 500;
+      margin-bottom: 15px;
     }
     .ds-last {
       background: #f5f5f5;
@@ -171,6 +160,7 @@ export default defineComponent({
       font-weight: 500;
       text-align: center;
       margin-top: 10px;
+      margin-bottom: 40px;
       .link {
         text-decoration: none;
         color: #4f80ff;
