@@ -45,7 +45,7 @@
     <v-row>
       <v-col md="6" cols="12">
         <div class="mb-2 mt-5">کد تخفیف</div>
-        <div class="text-center">
+        <div align="center">
           <input
             class="gray-border"
             placeholder="کد تخفیف خود ر وارد کنید."
@@ -71,9 +71,9 @@
         </div>
       </v-col>
     </v-row>
-    <div class="text-center">
-      <v-btn variant="text" class="btns back"> بازگشت </v-btn>
-      <v-btn variant="text" class="btns confirm"> تایید نهایی </v-btn>
+    <div align="center">
+      <v-btn variant="text" rounded="pill" min-width="40%" class="btns back"> بازگشت </v-btn>
+      <v-btn variant="flat" color="#5cb85c" rounded="pill" min-width="40%" class="btns confirm"> تایید نهایی </v-btn>
     </div>
   </v-container>
 </template>
@@ -123,9 +123,6 @@
     font-family: IRANSans;
     font-size: 15px;
     letter-spacing: 0;
-    min-width: 40%;
-    border-radius: 50px;
-
     padding: 7px;
     margin: 60px 10px;
   }
@@ -133,12 +130,7 @@
     border: 1px solid #aeaeae;
   }
   .confirm {
-    background: #5cb85c;
-    color: white;
-  }
-  .text-center {
-    text-align: center;
-    color: black;
+   color: white;
   }
 }
 </style>

@@ -4,37 +4,52 @@
       همین حالا <span style="color: #ffa200">دامنه</span> مورد نظرتان را ثبت
       کنید
     </p>
-    <p class="margin-b">
+    <p class="mb-8">
       همین حالا دامنه ی مورد نظرتان را جستجو و در صورت آزاد بودن، اقدام به ثبت
       آن کنید.
     </p>
-    <div class="d-flex justify-center align-center margin-b">
-      <form class="form-group search-input justify-center">
-        <div class="input-group">
-          <v-row>
-            <v-col cols="2">
-              <select v-model="selected" class="form-control select-domain" dir="ltr">
-                <option :value="domains[index - 1].value" v-for="index in 4" :key="index">
-                  <v-btn>{{ domains[index - 1].tilte}}</v-btn>
-                </option>
-              </select>
-            </v-col>
-            <v-col cols="8">
-              <input
-                type="text"
-                class="input-style form-control ui-autocomplete-input"
-                placeholder="نام دامنه مورد نظر خود را وارد کنید"
-              />
-            </v-col>
-            <v-col cols="2">
-              <v-btn variant="text" type="submit" class="btn-confirm">
+    <v-row class="justify-center">
+      <v-col md="9" cols="12">
+        <v-form>
+          <v-text-field
+            bg-color="white"
+            variant="plain"
+            rounded="pill"
+            density="compact"
+            class="text-field"
+            placeholder="نام دامنه مورد نظر خود را وارد کنید"
+          >
+            <template v-slot:append-inner>
+              <v-btn
+                type="submit"
+                variant="flat"
+                color="#ffa200"
+                rounded="pill"
+                density="comfortable"
+                float="left"
+                width="100px"
+                height="44px"
+                class="btn-confirm"
+              >
                 جستجو
               </v-btn>
-            </v-col>
-          </v-row>
-        </div>
-      </form>
-    </div>
+            </template>
+            <template v-slot:prepend-inner>
+              <select v-model="selected" class="select-domain" dir="ltr">
+                <option
+                  :value="domains[index - 1].value"
+                  v-for="index in 4"
+                  :key="index"
+                >
+                  <v-btn>{{ domains[index - 1].tilte }}</v-btn>
+                </option>
+              </select>
+            </template>
+          </v-text-field>
+        </v-form>
+      </v-col>
+    </v-row>
+
     <div class="featured-tlds">
       <div dir="ltr" class="prices">
         <div class="price">.com <span>۶۰۳,۰۰۰</span></div>
@@ -68,7 +83,6 @@ export default defineComponent({
   max-width: 90%;
   background: #4f80ff;
   border-radius: 15px;
-  font-family: IRANSans;
   padding: 40px;
   color: white;
   text-align: center;
@@ -77,26 +91,6 @@ export default defineComponent({
     font-weight: 900;
     font-size: 20px;
     margin-bottom: 15px;
-  }
-  .margin-b {
-    margin-bottom: 30px;
-  }
-  .search-input {
-    width: 77%;
-    background-color: white;
-    border-radius: 40px;
-    min-height: 20px;
-
-    input:focus {
-      outline: none;
-    }
-  }
-  .input-style {
-    height: 50px;
-    width: 100%;
-    font-size: 14px;
-    color: rgb(156, 156, 156);
-    text-align: left;
   }
   .select-domain {
     background: rgb(235, 235, 235);
@@ -109,19 +103,33 @@ export default defineComponent({
   }
   .btn-confirm {
     font-family: IRANSans;
+    color: white;
     padding: 10px;
     letter-spacing: 0;
-    border-radius: 40px;
-    background: #ffa200;
     font-weight: 800;
     font-size: 14px;
-    width: 100px;
-    height: 42px;
-    margin-top: 5px;
-    margin-left: 7px;
-    float: left;
+    margin: 5px 7px;
   }
-
+  .text-field {
+    .v-field {
+      input {
+        text-align: center;
+        direction: ltr;
+      }
+    }
+  }
+  .v-input--density-compact {
+    --v-input-padding-top: 8px;
+    --v-field-padding-top: 0px;
+  }
+  .v-field.v-field--variant-plain {
+    .v-field__prepend-inner {
+      padding-top: 0px;
+    }
+    .v-field__append-inner {
+      padding-top: 0px;
+    }
+  }
   .featured-tlds {
     width: 100%;
     overflow: auto;
@@ -143,16 +151,8 @@ export default defineComponent({
     }
   }
   @media (max-width: 600px) {
-    .search-input {
-      min-width: 100%;
-    }
     .select-domain {
       width: 70px;
-    }
-    .input-style {
-      width: 80%;
-      padding-left: 10px;
-      padding-right: 8px;
     }
   }
   @media (max-width: 500px) {

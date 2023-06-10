@@ -1,5 +1,5 @@
 <template>
-  <div class="pf-container">
+  <div class="panel-features-container">
     <p class="title">امکانات پنل مدیریت دامنه</p>
     <div class="content">
         <v-row>
@@ -18,9 +18,8 @@
   </div>
 </template>
 <style lang="scss">
-.pf-container {
+.panel-features-container {
   width: 100%;
-  font-family: IRANSans;
   text-align: center;
   background: #4f80ff;
   color: white;

@@ -14,7 +14,7 @@
             گرافیک از این متن برای پرکردن صفحه و ارائه شکل کلی طرح استفاده
             می‌کنند.
           </p>
-          <div class="center-btn">
+          <div class="price-btn">
             <v-btn class="header-btn">مشاهده ی تعرفه ها</v-btn>
           </div>
         </div>
@@ -29,7 +29,6 @@
 <style lang="scss">
 .header-container {
   max-width: 90%;
-  font-family: IRANSans;
   .background {
     background-image: url(@/assets/pics/headerEllipse.svg);
     background-position: right;
@@ -60,7 +59,7 @@
   .center {
     margin: auto;
   }
-  .center-btn {
+  .price-btn {
     text-align: right;
   }
   @media (max-width: 600px) {
@@ -68,7 +67,7 @@
       text-align: center;
       padding-top: 20px;
     }
-    .center-btn {
+    .price-btn {
       text-align: center;
     }
   }

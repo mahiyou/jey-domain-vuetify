@@ -1,5 +1,5 @@
 <template>
-  <div class="contact-us-con">
+  <div class="contact-us-container">
     <p class="title">{{ title }}</p>
     <p>{{ subtitle }}</p>
   </div>
@@ -8,27 +8,30 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-
   setup() {
     return {
       texts: {
-        checkDomain:{
+        checkDomain: {
           title: "بررسی دامنه",
-          subtitle: "به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند."
+          subtitle:
+            "به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.",
         },
-        configuration:{
+        configuration: {
           title: "پیکربندی دامنه",
-          subtitle: "به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند."
+          subtitle:
+            "به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.",
         },
-        confirmDomain:{
+        confirmDomain: {
           title: "تایید دامنه",
-          subtitle: "به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند."
+          subtitle:
+            "به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.",
         },
-        completeOrder:{
+        completeOrder: {
           title: "تکمیل سفارش",
-          subtitle: "به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند."
+          subtitle:
+            "به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.",
         },
-      }
+      },
     };
   },
   props: {
@@ -43,23 +46,21 @@ export default defineComponent({
     },
     subtitle() {
       return this.texts[this.step].subtitle;
-    }
-  }
+    },
+  },
 });
 </script>
 <style lang="scss" scoped>
-.contact-us-con{
-  font-family: IRANSans;
+.contact-us-container {
   background: #4f80ff;
   text-align: center;
   padding: 50px 0px;
   color: white;
   font-size: 14px;
   line-height: 40px;
-  .title{
+  .title {
     font-size: 30px;
     font-weight: 900;
   }
 }
-
 </style>

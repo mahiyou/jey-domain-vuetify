@@ -1,16 +1,14 @@
 <template>
-  <div class="contact-us-con">
+  <div class="contact-us-container">
     <p class="title">تماس با ما</p>
     <p>
       به متن های
       برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.
     </p>
   </div>
-
 </template>
 <style lang="scss">
-.contact-us-con{
-  font-family: IRANSans;
+.contact-us-container{
   background: #4f80ff;
   text-align: center;
   padding: 50px 0px;

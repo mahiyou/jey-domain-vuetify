@@ -1,9 +1,9 @@
 <template>
-  <v-container class="toolbar-container" id="tb">
+  <v-container class="toolbar-container">
     <v-toolbar density="compact" color="white">
       <v-row>
         <v-col sm="2" cols="6">
-          <div style="width: 110px">
+          <div class="logo-size">
             <v-img
               src="@/assets/pics/JeyDomain.svg"
               class="mt-4 mt-sm-2"
@@ -38,10 +38,9 @@
             class="float-left nav-icon-visible"
             @click="$emit('clickOnNavBtn')"
           ></v-app-bar-nav-icon>
-
           <div class="float-left visible">
             <v-btn class="toolbar-btn" href="#"> ورود </v-btn>
-            <v-btn class="toolbar-btn signup-btn" href="#"> ثبت نام </v-btn>
+            <v-btn class="toolbar-btn" color="primary" rounded="xl" variant="flat" href="#"> ثبت نام </v-btn>
           </div>
         </v-col>
       </v-row>
@@ -56,22 +55,13 @@ import { defineComponent } from "vue"
   })
 </script>
 <style lang="scss">
-#tb {
-  max-width: 90%;
-  padding-left: 0px;
-  padding-right: 0px;
-}
 .toolbar-container {
-  max-width: 90%;
-  font-family: IRANSans;
+  .logo-size{
+    width: 110px
+  }
   .toolbar-btn {
     letter-spacing: 0;
     font-size: 12px;
-  }
-  .signup-btn {
-    background: #4f80ff;
-    border-radius: 25px;
-    color: white;
   }
   .visible {
     display: block;

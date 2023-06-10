@@ -60,7 +60,7 @@
         </v-col>
       </v-row>
       <div class="text-center">
-        <v-btn variant="text" class="btn-continue"> ادامه </v-btn>
+        <v-btn variant="flat" color="#5cb85c" rounded="pill" width="45%" class="btn-continue"> ادامه </v-btn>
       </div>
       
     </div>
@@ -70,7 +70,6 @@
 .config-domain-container {
   padding: 25px 30px;
   font-size: 14px;
-  font-family: IRANSans;
   .sentence-2 {
     margin-top: 15px;
     font-weight: 900;
@@ -117,10 +116,7 @@
     font-family: IRANSans;
     font-size: 16px;
     letter-spacing: 0;
-    width: 45%;
-    border-radius: 50px;
     color: white;
-    background: #5cb85c;
     padding: 7px;
     margin: 60px auto 0px auto;
   }

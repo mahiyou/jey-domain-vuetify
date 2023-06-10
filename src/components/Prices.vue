@@ -19,7 +19,7 @@
     </v-tabs>
     <v-window v-model="tab">
       <v-window-item v-for="n in 6" :key="n" :value="n">
-        <v-table class="table">
+        <v-table>
           <thead id="theadborder">
             <tr>
               <th class="text-center no-border">پسوند دامنه</th>
@@ -110,7 +110,6 @@ export default {
 <style lang="scss">
 .prices-container {
   max-width: 90%;
-  font-family: IRANSans;
   text-align: center;
   margin-bottom: 50px;
   .prices-title {

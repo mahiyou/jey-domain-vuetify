@@ -1,5 +1,5 @@
 <template>
-  <v-container class="buyDomain-container">
+  <v-container class="buy-domain-container">
     <p class="title">چگونه می توانیم دامنه بخریم؟</p>
     <v-row>
       <v-col md="4" cols="12">
@@ -46,9 +46,8 @@
   </v-container>
 </template>
 <style lang="scss">
-.buyDomain-container {
+.buy-domain-container {
   max-width: 90%;
-  font-family: IRANSans;
   text-align: center;
   margin-bottom: 50px;
   .title {
@@ -63,8 +62,8 @@
     box-shadow: none;
   }
   .card-img{
-    width: 100%;
-
+    width: 47px;
+    height: 47px;
   }
   .card-title{
     font-weight: 700;
@@ -74,10 +73,6 @@
   .card-content{
     font-weight: 400;
     font-size: 14px;
-  }
-  .card-img{
-    width: 47px;
-    height: 47px;
   }
   .img-background{
     width: 67px;
@@ -98,7 +93,6 @@
   }
   @media (max-width:500px) {
     max-width: 100%;
-    
   }
 }
 </style>

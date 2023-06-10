@@ -6,14 +6,14 @@
           <v-img
             src="@/assets/pics/dark-JeyDomain.svg"
             width="170px"
-            class="f-img1"
+            class="footer-img1"
           ></v-img>
         </div>
 
         <div class="footer-sen">
           بزرگترین مرکز ثبت <span style="color: #4f80ff">دامنه</span> در ایران
-        </div></v-col
-      >
+        </div>
+      </v-col>
       <v-col sm="4" cols="6">
         <v-row>
           <v-col sm="6" cols="12">
@@ -37,7 +37,7 @@
         </v-row>
       </v-col>
       <v-col sm="4" cols="6">
-        <v-img src="@/assets/pics/Enamad.png" class="f-img2"></v-img>
+        <v-img src="@/assets/pics/Enamad.png" class="footer-img2"></v-img>
       </v-col>
     </v-row>
   </div>
@@ -45,7 +45,6 @@
 <style lang="scss">
 .f-container {
   background: #242849;
-  font-family: IRANSans;
   color: white;
   padding: 45px 45px 30px 45px;
   border-radius: 60px 0px 0px 0px;
@@ -56,10 +55,10 @@
     font-size: 18px;
     margin-top: 20px;
   }
-  .f-img1 {
+  .footer-img1 {
     margin-top: 5%;
   }
-  .f-img2 {
+  .footer-img2 {
     width: 110px;
     height: 140px;
     border-radius: 10px;
@@ -81,11 +80,12 @@
       margin: 30px 0;
       text-align: center;
     }
-    .f-img1 {
+    .footer-img1 {
       margin: auto;
     }
-    .f-img2 {
-    margin-top: 25%;}
+    .footer-img2 {
+      margin-top: 25%;
+    }
   }
 }
 </style>

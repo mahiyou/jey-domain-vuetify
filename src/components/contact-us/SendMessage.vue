@@ -4,7 +4,7 @@
       <v-col md="5" cols="12">
         <div class="form-style">
           <div class="title">پیامی برای ما بگذارید!</div>
-          <form action="">
+          <form>
             <div>
               <p class="input-title">نام و نام خانوادگی</p>
               <input class="inputs" type="text" />
@@ -43,7 +43,6 @@
 <style lang="scss">
 .form-con {
   max-width: 95%;
-  font-family: IRANSans;
   @media (max-width: 500px) {
     max-width: 100%;
   }

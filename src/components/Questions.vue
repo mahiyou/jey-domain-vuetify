@@ -1,5 +1,5 @@
 <template>
-  <v-container class="q-container">
+  <v-container class="questions-container">
     <p class="title">سوالات متداول</p>
     <p class="content">پاسخ سوالات شما پیرامون خدمات ثبت دامنه جین دامین</p>
     <v-expansion-panels>
@@ -47,9 +47,8 @@
   </v-container>
 </template>
 <style lang="scss">
-.q-container {
+.questions-container {
   max-width: 90%;
-  font-family: IRANSans;
   text-align: center;
   margin-bottom: 50px;
   .title {
@@ -72,12 +71,10 @@
       font-size: 15px;
       font-weight: 500;
     }
-
     .v-expansion-panel__shadow{
         box-shadow: none;
         border: 0px;
     }
-
     .v-expansion-panel-text__wrapper{
         padding: 20px 28px
     }

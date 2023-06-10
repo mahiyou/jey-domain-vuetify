@@ -1,5 +1,5 @@
 <template>
-  <v-container class="order-nav-con">
+  <v-container class="order-nav-container">
     <v-row>
       <v-col sm="4" cols="12">
         <v-tabs
@@ -10,6 +10,8 @@
           :direction="tabsDirection"
           hide-slider
           color="primary"
+         
+          class="nav-tabs"
         >
           <v-tab
             value="checkDomain"
@@ -54,7 +56,7 @@
         </v-tabs>
       </v-col>
       <v-col sm="8" cols="12">
-        <v-window :model-value="modelValue" @update:model-value="onTabChanged">
+        <v-window :touch="false" :model-value="modelValue" @update:model-value="onTabChanged">
           <v-window-item
             value="checkDomain"
           >
@@ -77,11 +79,17 @@
 </template>
 
 <style lang="scss">
-.order-nav-con {
+.order-nav-container {
   min-width: 90%;
-  font-family: IRANSans;
   padding-top: 50px;
-
+  .nav-tabs {
+    .v-btn--disabled.v-btn--variant-elevated, .v-btn--disabled.v-btn--variant-flat {
+      color: rgb(var(--v-theme-on-surface));
+      .v-btn__overlay {
+        opacity: 0;
+      }
+    }
+  }
   .order-tabs-handler {
     margin-bottom: 1em;
     letter-spacing: 0px;
