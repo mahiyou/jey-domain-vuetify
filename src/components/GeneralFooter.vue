@@ -4,7 +4,7 @@
       <v-col sm="4" cols="12">
         <div>
           <v-img
-            src="@/assets/pics/dark-JeyDomain.svg"
+            :src="darkJeyDomain"
             width="170px"
             class="footer-img1">
           </v-img>
@@ -36,11 +36,25 @@
         </v-row>
       </v-col>
       <v-col sm="4" cols="6">
-        <v-img src="@/assets/pics/Enamad.png" class="footer-img2"></v-img>
+        <v-img :src="Enamad" class="footer-img2"></v-img>
       </v-col>
     </v-row>
   </div>
 </template>
+<script lang="ts">
+import { defineComponent } from "vue";
+import darkJeyDomain from "@/assets/pics/dark-JeyDomain.svg";
+import Enamad from "@/assets/pics/Enamad.png";
+
+export default defineComponent({
+  data(){
+    return{
+      darkJeyDomain:darkJeyDomain,
+      Enamad:Enamad
+    }
+  }
+})
+</script>
 <style lang="scss">
 .f-container {
   background: #242849;
