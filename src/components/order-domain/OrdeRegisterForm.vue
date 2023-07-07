@@ -61,12 +61,6 @@
           :rules="passwordRules"
           required
         />
-        <v-checkbox v-model="Checkbox" color="primary" :rules="checkboxRules">
-          <template v-slot:label
-            >همه ی <a class="link" href="#">قوانین و شراط</a>
-            را خوانده وپذیرفته ام.
-          </template>
-        </v-checkbox>
       </v-col>
       <v-col sm="6" cols="12">
         <div>تکرار کلمه عبور<span class="star-color">*</span></div>
@@ -79,6 +73,12 @@
         />
       </v-col>
     </v-row>
+    <v-checkbox v-model="Checkbox" color="primary" :rules="checkboxRules">
+      <template v-slot:label>همه ی 
+        <a class="link" href="#">قوانین و شراط</a>
+        را خوانده وپذیرفته ام.
+      </template>
+    </v-checkbox>
 
     <div class="text-center">
       <v-btn
